@@ -16,6 +16,10 @@ let package = Package(
             "swresample",
             "swscale",
             "Dependencies"
+        ], linkerSettings: [
+            .linkedLibrary("z"),
+            .linkedLibrary("bz2"),
+            .linkedLibrary("iconv"),
         ]),
         .binaryTarget(name: "avcodec", path: "xcframeworks/avcodec.xcframework"),
         .binaryTarget(name: "avdevice", path: "xcframeworks/avdevice.xcframework"),
@@ -23,11 +27,6 @@ let package = Package(
         .binaryTarget(name: "avformat", path: "xcframeworks/avformat.xcframework"),
         .binaryTarget(name: "avutil", path: "xcframeworks/avutil.xcframework"),
         .binaryTarget(name: "swresample", path: "xcframeworks/swresample.xcframework"),
-        .binaryTarget(name: "swscale", path: "xcframeworks/swscale.xcframework"),
-        .target(name: "Dependencies", linkerSettings: [
-            .linkedLibrary("z"),
-            .linkedLibrary("bz2"),
-            .linkedLibrary("iconv"),
-        ])
+        .binaryTarget(name: "swscale", path: "xcframeworks/swscale.xcframework")
     ]
 )
