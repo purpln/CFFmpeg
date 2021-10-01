@@ -14,8 +14,7 @@ let package = Package(
             "avformat",
             "avutil",
             "swresample",
-            "swscale",
-            "Dependencies"
+            "swscale"
         ], linkerSettings: [
             .linkedLibrary("z"),
             .linkedLibrary("bz2"),
