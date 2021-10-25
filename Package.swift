@@ -7,6 +7,6 @@ let package = Package(
     products: [.library(name: "CFFmpeg", targets: ["CFFmpeg"])],
     dependencies: [],
     targets: [
-        .systemLibrary(name: "CFFmpeg")
+        .systemLibrary(name: "CFFmpeg", pkgConfig: "libavformat")
     ]
 )
