@@ -7,25 +7,6 @@ let package = Package(
     products: [.library(name: "CFFmpeg", targets: ["CFFmpeg"])],
     dependencies: [],
     targets: [
-        .target(name: "CFFmpeg", dependencies: [
-            "avcodec",
-            "avdevice",
-            "avfilter",
-            "avformat",
-            "avutil",
-            "swresample",
-            "swscale"
-        ], linkerSettings: [
-            .linkedLibrary("z"),
-            .linkedLibrary("bz2"),
-            .linkedLibrary("iconv"),
-        ]),
-        .binaryTarget(name: "avcodec", path: "xcframeworks/avcodec.xcframework"),
-        .binaryTarget(name: "avdevice", path: "xcframeworks/avdevice.xcframework"),
-        .binaryTarget(name: "avfilter", path: "xcframeworks/avfilter.xcframework"),
-        .binaryTarget(name: "avformat", path: "xcframeworks/avformat.xcframework"),
-        .binaryTarget(name: "avutil", path: "xcframeworks/avutil.xcframework"),
-        .binaryTarget(name: "swresample", path: "xcframeworks/swresample.xcframework"),
-        .binaryTarget(name: "swscale", path: "xcframeworks/swscale.xcframework")
+        .systemLibrary(name: "CFFmpeg")
     ]
 )
