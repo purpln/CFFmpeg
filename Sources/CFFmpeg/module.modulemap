@@ -1,36 +1,36 @@
 module CFFmpeg [system] {
     module AVUtil {
-        header "avutil_shim.h"
+        header "avutil.h"
         link "avutil"
         export *
     }
     module AVFormat {
-        header "avformat_shim.h"
+        header "avformat.h"
         link "avformat"
         export *
     }
     module AVCodec {
-        header "avcodec_shim.h"
+        header "avcodec.h"
         link "avcodec"
         export *
     }
     module AVFilter {
-        header "avfilter_shim.h"
+        header "avfilter.h"
         link "avfilter"
         export *
     }
     module AVDevice {
-        header "avdevice_shim.h"
+        header "avdevice.h"
         link "avdevice"
         export *
     }
     module Swscale {
-        header "swscale_shim.h"
+        header "swscale.h"
         link "swscale"
         export *
     }
     module Swresample {
-        header "swresample_shim.h"
+        header "swresample.h"
         link "swresample"
         export *
     }
