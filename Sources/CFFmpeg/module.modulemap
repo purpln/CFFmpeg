@@ -1,4 +1,5 @@
 module CFFmpeg [system] {
+    header "header.h"
     module AVUtil {
         header "avutil.h"
         link "avutil"
@@ -34,4 +35,5 @@ module CFFmpeg [system] {
         link "swresample"
         export *
     }
+    link "CFFmpeg"
 }
