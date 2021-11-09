@@ -1,6 +1,6 @@
-#ifndef SWRESAMPLE_SHIM_H
-#define SWRESAMPLE_SHIM_H
+#ifndef swresample_h
+#define swresample_h
 
 #include "/usr/local/include/libswresample/swresample.h"
 
-#endif /* SWRESAMPLE_SHIM_H */
+#endif

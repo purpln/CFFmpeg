@@ -1,5 +1,5 @@
-#ifndef AVUTIL_SHIM_H
-#define AVUTIL_SHIM_H
+#ifndef avutil_h
+#define avutil_h
 
 #include <errno.h>
 #include <stddef.h>
@@ -96,4 +96,4 @@ static inline void swift_log(void *avcl, int level, const char *msg) {
   av_log(avcl, level, msg);
 }
 
-#endif /* AVUTIL_SHIM_H */
+#endif

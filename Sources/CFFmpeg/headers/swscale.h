@@ -1,6 +1,6 @@
-#ifndef SWSCALE_SHIM_H
-#define SWSCALE_SHIM_H
+#ifndef swscale_h
+#define swscale_h
 
 #include "/usr/local/include/libswscale/swscale.h"
 
-#endif /* SWSCALE_SHIM_H */
+#endif

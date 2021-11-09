@@ -1,6 +1,6 @@
-#ifndef AVCODEC_SHIM_H
-#define AVCODEC_SHIM_H
+#ifndef avcodec_h
+#define avcodec_h
 
 #include "/usr/local/include/libavcodec/avcodec.h"
 
-#endif /* AVCODEC_SHIM_H */
+#endif
