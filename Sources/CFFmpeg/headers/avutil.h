@@ -1,20 +1,18 @@
-#ifndef avutil_h
-#define avutil_h
-
+#pragma once
 #include <errno.h>
 #include <stddef.h>
-#include "/usr/local/include/libavutil/avutil.h"
-#include "/usr/local/include/libavutil/common.h"
-#include "/usr/local/include/libavutil/error.h"
-#include "/usr/local/include/libavutil/opt.h"
-#include "/usr/local/include/libavutil/file.h"
-#include "/usr/local/include/libavutil/log.h"
-#include "/usr/local/include/libavutil/timestamp.h"
-#include "/usr/local/include/libavutil/pixdesc.h"
-#include "/usr/local/include/libavutil/imgutils.h"
-#include "/usr/local/include/libavutil/channel_layout.h"
-#include "/usr/local/include/libavutil/md5.h"
-#include "/usr/local/include/libavutil/mastering_display_metadata.h"
+#include <libavutil/avutil.h>
+#include <libavutil/common.h>
+#include <libavutil/error.h>
+#include <libavutil/opt.h>
+#include <libavutil/file.h>
+#include <libavutil/log.h>
+#include <libavutil/timestamp.h>
+#include <libavutil/pixdesc.h>
+#include <libavutil/imgutils.h>
+#include <libavutil/channel_layout.h>
+#include <libavutil/md5.h>
+#include <libavutil/mastering_display_metadata.h>
 
 static const int64_t swift_AV_NOPTS_VALUE = AV_NOPTS_VALUE;
 
@@ -95,5 +93,3 @@ static const int swift_AVERROR_HTTP_SERVER_ERROR  = AVERROR_HTTP_SERVER_ERROR;
 static inline void swift_log(void *avcl, int level, const char *msg) {
   av_log(avcl, level, msg);
 }
-
-#endif

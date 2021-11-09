@@ -1,6 +1,2 @@
-#ifndef avcodec_h
-#define avcodec_h
-
-#include "/usr/local/include/libavcodec/avcodec.h"
-
-#endif
+#pragma once
+#include <libavcodec/avcodec.h>
