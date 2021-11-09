@@ -1,2 +1,2 @@
 #pragma once
-#include <libavcodec/avcodec.h>
+#include "/usr/local/include/libavcodec/avcodec.h"

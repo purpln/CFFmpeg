@@ -1,2 +1,2 @@
 #pragma once
-#include <libswresample/swresample.h>
+#include "/usr/local/include/libswresample/swresample.h"

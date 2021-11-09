@@ -1,2 +1,2 @@
 #pragma once
-#include <libavdevice/avdevice.h>
+#include "/usr/local/include/libavdevice/avdevice.h"

@@ -1,2 +1,2 @@
 #pragma once
-#include <libswscale/swscale.h>
+#include "/usr/local/include/libswscale/swscale.h"
