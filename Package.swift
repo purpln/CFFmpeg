@@ -5,5 +5,5 @@ import PackageDescription
 let package = Package(
     name: "CFFmpeg",
     products: [.library(name: "CFFmpeg", targets: ["CFFmpeg"])],
-    targets: [.systemLibrary(name: "CFFmpeg", pkgConfig: "libavformat")]
+    targets: [.systemLibrary(name: "CFFmpeg", pkgConfig: "")]
 )
