@@ -1,4 +1,4 @@
 #pragma once
-#include "/usr/local/include/libavfilter/avfilter.h"
-#include "/usr/local/include/libavfilter/buffersink.h"
-#include "/usr/local/include/libavfilter/buffersrc.h"
+#include <libavfilter/avfilter.h>
+#include <libavfilter/buffersink.h>
+#include <libavfilter/buffersrc.h>
